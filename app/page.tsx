@@ -5,48 +5,48 @@ import { useState } from "react";
 const fashionCategories = [
   {
     name: "Dresses",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kente%20Outfit.jpg",
-    alt: "Ghanaian kente dress",
+    image: "https://images.pexels.com/photos/36990984/pexels-photo-36990984.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Stylish Ghanaian women in vibrant local dresses",
   },
   {
     name: "Tops",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20traditional%20smock%20from%20Northern%20Ghana.jpg",
-    alt: "Traditional smock from Northern Ghana",
+    image: "https://images.pexels.com/photos/37003830/pexels-photo-37003830.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Modern Ghanaian fashion top inspired by traditional fuugu styling",
   },
   {
     name: "Trousers & Bottoms",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Weaving%200098.jpg",
-    alt: "Ghanaian smock fabric and traditional styling",
+    image: "https://images.pexels.com/photos/37003827/pexels-photo-37003827.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Contemporary Ghanaian fashion with local textile styling",
   },
   {
     name: "Kente & Prints",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kente%20fashion%20in%20Ghana.jpg",
-    alt: "Ghanaian kente fashion",
+    image: "https://images.pexels.com/photos/36603048/pexels-photo-36603048.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Vibrant Ghanaian kente fashion portrait",
   },
   {
     name: "Traditional Wear",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akan%20dancers.jpg",
-    alt: "Akan traditional clothing",
+    image: "https://images.pexels.com/photos/36990986/pexels-photo-36990986.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Ghanaian traditional fuugu fashion in Accra",
   },
   {
     name: "Accessories",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ghana%20Beads%20-%20Cultural%20Artifacts.jpg",
-    alt: "Traditional Ghanaian beads",
+    image: "https://images.pexels.com/photos/33697672/pexels-photo-33697672.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Ghanaian traditional jewelry and bead accessories",
   },
   {
     name: "Bags",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beads%20and%20Kente.jpg",
-    alt: "Ghanaian kente and bead craft",
+    image: "https://images.pexels.com/photos/36652113/pexels-photo-36652113.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Ghanaian fashion styling with a statement bag",
   },
   {
     name: "Footwear",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ghanaian%20traditional%20beads%20and%20footwear%20and%20souvenirs.jpg",
-    alt: "Traditional Ghanaian footwear and craft",
+    image: "https://images.pexels.com/photos/33697674/pexels-photo-33697674.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Traditional Ghanaian styling with gold sandals",
   },
   {
     name: "Others",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ghana%20ladies.jpg",
-    alt: "Ghanaian ladies in kente",
+    image: "https://images.pexels.com/photos/36405531/pexels-photo-36405531.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "Elegant Ghanaian fashion portrait with local textiles",
   },
 ];
 
