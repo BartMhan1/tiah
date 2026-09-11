@@ -6,8 +6,9 @@ const dressHeroImages = [
   "/images/fashion/category-heroes/dresses/dress-01.jpg",
   "/images/fashion/category-heroes/dresses/dress-02.jpg",
   "/images/fashion/category-heroes/dresses/dress-03.jpg",
-  "/images/fashion/category-heroes/dresses/dress-04.png",
+  "/images/fashion/category-heroes/dresses/dress-04.jpg",
   "/images/fashion/category-heroes/dresses/dress-05.jpg",
+  "/images/fashion/category-heroes/dresses/dress-06.jpg",
 ];
 
 export default function DressesPage() {
