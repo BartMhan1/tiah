@@ -3,15 +3,15 @@
 import { useState } from "react";
 
 const fashionCategories = [
-  { name: "Dresses", image: "/images/fashion/categories/dresses.jpg", alt: "Ghanaian dresses" },
-  { name: "Tops", image: "/images/fashion/categories/tops.jpg", alt: "Ghanaian tops" },
-  { name: "Trousers & Bottoms", image: "/images/fashion/categories/bottoms.jpg", alt: "Ghanaian trousers and bottoms" },
-  { name: "Kente & Prints", image: "/images/fashion/categories/kente-prints.jpg", alt: "Ghanaian kente and prints" },
-  { name: "Traditional Wear", image: "/images/fashion/categories/traditional-wear.jpg", alt: "Ghanaian traditional wear" },
-  { name: "Accessories", image: "/images/fashion/categories/accessories.jpg", alt: "Ghanaian accessories" },
-  { name: "Bags", image: "/images/fashion/categories/bags.jpg", alt: "Ghanaian bags" },
-  { name: "Footwear", image: "/images/fashion/categories/footwear.jpg", alt: "Ghanaian footwear" },
-  { name: "Others", image: "/images/fashion/categories/others.jpg", alt: "Other Ghanaian fashion" },
+  { name: "Dresses", image: "/images/fashion/categories/dresses.jpg", alt: "Ghanaian dresses", href: "/fashion/dresses" },
+  { name: "Tops", image: "/images/fashion/categories/tops.jpg", alt: "Ghanaian tops", href: "#" },
+  { name: "Trousers & Bottoms", image: "/images/fashion/categories/bottoms.jpg", alt: "Ghanaian trousers and bottoms", href: "#" },
+  { name: "Kente & Prints", image: "/images/fashion/categories/kente-prints.jpg", alt: "Ghanaian kente and prints", href: "#" },
+  { name: "Traditional Wear", image: "/images/fashion/categories/traditional-wear.jpg", alt: "Ghanaian traditional wear", href: "#" },
+  { name: "Accessories", image: "/images/fashion/categories/accessories.jpg", alt: "Ghanaian accessories", href: "#" },
+  { name: "Bags", image: "/images/fashion/categories/bags.jpg", alt: "Ghanaian bags", href: "#" },
+  { name: "Footwear", image: "/images/fashion/categories/footwear.jpg", alt: "Ghanaian footwear", href: "#" },
+  { name: "Others", image: "/images/fashion/categories/others.jpg", alt: "Other Ghanaian fashion", href: "#" },
 ];
 
 export default function HomePage() {
@@ -60,7 +60,7 @@ export default function HomePage() {
           <button className="category-arrow category-arrow--left" type="button" aria-label="Previous categories" onClick={() => scrollCategories(-1)}>←</button>
           <div className="fashion-categories__track">
             {fashionCategories.map((category) => (
-              <a className="fashion-category" href="#" key={category.name}>
+              <a className="fashion-category" href={category.href} key={category.name}>
                 <span className="fashion-category__image"><img src={category.image} alt={category.alt} /></span>
                 <span className="fashion-category__name">{category.name}</span>
               </a>
