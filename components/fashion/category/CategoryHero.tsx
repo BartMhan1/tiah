@@ -84,6 +84,8 @@ export default function CategoryHero({
           inset: 0;
           width: 100%;
           height: 100%;
+          overflow: hidden;
+          background: #111;
         }
 
         .category-hero__image--full {
@@ -91,7 +93,7 @@ export default function CategoryHero({
           inset: 0;
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: fill;
           object-position: center;
         }
       `}</style>
