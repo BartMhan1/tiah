@@ -143,12 +143,12 @@ button {
 }
 
 .main-nav {
-  min-height: 108px;
+  min-height: 78px;
   display: grid;
-  grid-template-columns: minmax(230px, 1fr) auto minmax(460px, 1.45fr);
+  grid-template-columns: minmax(190px, 1fr) auto minmax(390px, 1.45fr);
   align-items: center;
-  gap: 32px;
-  padding: 14px 3.2vw;
+  gap: 24px;
+  padding: 8px 3.2vw;
   background: linear-gradient(180deg, rgba(11, 10, 9, 0.28) 0%, rgba(11, 10, 9, 0.10) 72%, rgba(11, 10, 9, 0) 100%);
   border-bottom: 0;
   backdrop-filter: none;
@@ -157,14 +157,14 @@ button {
 
 .main-nav__left {
   display: flex;
-  gap: 42px;
+  gap: 32px;
   align-items: center;
 }
 
 .nav-tab {
   position: relative;
-  padding: 15px 0 12px;
-  font-size: 1.08rem;
+  padding: 9px 0 8px;
+  font-size: 0.94rem;
   color: rgba(255,255,255,0.78);
   text-shadow: 0 2px 12px rgba(0,0,0,0.32);
   transition: color 0.2s ease;
@@ -195,39 +195,45 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 220px;
+  min-width: 150px;
 }
 
 .brand-logo {
   display: block;
-  width: clamp(160px, 12vw, 225px);
-  max-height: 80px;
+  width: clamp(110px, 8vw, 150px);
+  max-height: 54px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 3px 9px rgba(0,0,0,0.22));
 }
 
 .main-nav__right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
   min-width: 0;
 }
 
 .search-box {
-  min-width: 260px;
-  max-width: 590px;
-  flex: 1 1 460px;
-  height: 54px;
-  padding: 0 20px;
+  min-width: 220px;
+  max-width: 520px;
+  flex: 1 1 410px;
+  height: 40px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 10px;
   color: rgba(255,255,255,0.9);
   border: 1px solid rgba(255,255,255,0.58);
   border-radius: 999px;
   background: rgba(8, 8, 8, 0.10);
   box-shadow: 0 3px 18px rgba(0,0,0,0.08);
+}
+
+.search-box svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
 }
 
 .search-box input {
@@ -236,6 +242,7 @@ button {
   outline: 0;
   color: #fff;
   background: transparent;
+  font-size: 0.88rem;
 }
 
 .search-box input::placeholder {
@@ -256,18 +263,23 @@ button {
   place-items: center;
 }
 
+.bag-button svg {
+  width: 23px;
+  height: 23px;
+}
+
 .bag-count {
   position: absolute;
-  top: -5px;
-  right: -8px;
-  width: 22px;
-  height: 22px;
+  top: -4px;
+  right: -6px;
+  width: 17px;
+  height: 17px;
   display: grid;
   place-items: center;
   border-radius: 50%;
   background: #fff;
   color: #241b15;
-  font-size: 0.75rem;
+  font-size: 0.62rem;
   font-weight: 800;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
@@ -275,13 +287,13 @@ button {
 .profile-button {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-align: left;
 }
 
 .profile-button__icon {
-  width: 46px;
-  height: 46px;
+  width: 34px;
+  height: 34px;
   display: grid;
   place-items: center;
   border: 1px solid rgba(255,255,255,0.78);
@@ -289,23 +301,28 @@ button {
   background: rgba(8,8,8,0.06);
 }
 
+.profile-button__icon svg {
+  width: 21px;
+  height: 21px;
+}
+
 .profile-button__text {
   display: grid;
-  line-height: 1.12;
-  font-size: 0.93rem;
+  line-height: 1.08;
+  font-size: 0.78rem;
   text-shadow: 0 2px 10px rgba(0,0,0,0.28);
 }
 
 .profile-button__text strong {
-  margin-top: 3px;
-  font-size: 1rem;
+  margin-top: 2px;
+  font-size: 0.84rem;
 }
 
 .header-preview-space {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding-top: 138px;
+  padding-top: 108px;
   color: rgba(255,255,255,0.42);
   font-size: 0.95rem;
   letter-spacing: 0.04em;
@@ -327,13 +344,13 @@ button {
 
   .main-nav {
     grid-template-columns: 1fr auto;
-    gap: 18px;
+    gap: 14px;
   }
 
   .brand-lockup {
     grid-row: 1;
     grid-column: 1 / -1;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 
   .main-nav__left {
@@ -372,8 +389,8 @@ button {
   .main-nav {
     min-height: auto;
     grid-template-columns: 1fr auto;
-    padding: 12px 18px 14px;
-    gap: 14px;
+    padding: 7px 18px 9px;
+    gap: 10px;
   }
 
   .brand-lockup {
@@ -382,15 +399,17 @@ button {
   }
 
   .brand-logo {
-    width: 145px;
+    width: 105px;
+    max-height: 42px;
   }
 
   .main-nav__left {
-    gap: 22px;
+    gap: 18px;
   }
 
   .nav-tab {
-    font-size: 0.95rem;
+    padding: 7px 0;
+    font-size: 0.84rem;
   }
 
   .profile-button__text {
@@ -398,15 +417,25 @@ button {
   }
 
   .profile-button__icon {
-    width: 40px;
-    height: 40px;
+    width: 31px;
+    height: 31px;
+  }
+
+  .profile-button__icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .bag-button svg {
+    width: 21px;
+    height: 21px;
   }
 
   .main-nav__right {
-    gap: 14px;
+    gap: 10px;
   }
 
   .header-preview-space {
-    padding-top: 124px;
+    padding-top: 96px;
   }
 }
