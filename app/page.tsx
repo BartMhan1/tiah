@@ -3,15 +3,51 @@
 import { useState } from "react";
 
 const fashionCategories = [
-  { name: "Dresses", image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=500&q=85" },
-  { name: "Tops", image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=85" },
-  { name: "Trousers & Bottoms", image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=500&q=85" },
-  { name: "Kente & Prints", image: "https://images.unsplash.com/photo-1601762603339-fd61e28b698a?auto=format&fit=crop&w=500&q=85" },
-  { name: "Traditional Wear", image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=500&q=85" },
-  { name: "Accessories", image: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=500&q=85" },
-  { name: "Bags", image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=85" },
-  { name: "Footwear", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=85" },
-  { name: "Others", image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=85" },
+  {
+    name: "Dresses",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kente%20Outfit.jpg",
+    alt: "Ghanaian kente dress",
+  },
+  {
+    name: "Tops",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20traditional%20smock%20from%20Northern%20Ghana.jpg",
+    alt: "Traditional smock from Northern Ghana",
+  },
+  {
+    name: "Trousers & Bottoms",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Weaving%200098.jpg",
+    alt: "Ghanaian smock fabric and traditional styling",
+  },
+  {
+    name: "Kente & Prints",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kente%20fashion%20in%20Ghana.jpg",
+    alt: "Ghanaian kente fashion",
+  },
+  {
+    name: "Traditional Wear",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akan%20dancers.jpg",
+    alt: "Akan traditional clothing",
+  },
+  {
+    name: "Accessories",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ghana%20Beads%20-%20Cultural%20Artifacts.jpg",
+    alt: "Traditional Ghanaian beads",
+  },
+  {
+    name: "Bags",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beads%20and%20Kente.jpg",
+    alt: "Ghanaian kente and bead craft",
+  },
+  {
+    name: "Footwear",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ghanaian%20traditional%20beads%20and%20footwear%20and%20souvenirs.jpg",
+    alt: "Traditional Ghanaian footwear and craft",
+  },
+  {
+    name: "Others",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ghana%20ladies.jpg",
+    alt: "Ghanaian ladies in kente",
+  },
 ];
 
 export default function HomePage() {
@@ -52,16 +88,16 @@ export default function HomePage() {
 
       <section className="fashion-categories" aria-labelledby="fashion-categories-title">
         <div className="fashion-categories__heading">
-          <div className="fashion-categories__eyebrow"><span />SHOP FASHION<span /></div>
+          <div className="fashion-categories__eyebrow">SHOP FASHION</div>
           <h2 id="fashion-categories-title">Find Your Ghanaian Style</h2>
-          <p>Authentic. Modern. Uniquely Ours.</p>
+          <p>Timeless pieces. Modern looks. Proudly Ghanaian.</p>
         </div>
         <div className="fashion-categories__carousel">
           <button className="category-arrow category-arrow--left" type="button" aria-label="Previous categories" onClick={() => scrollCategories(-1)}>←</button>
           <div className="fashion-categories__track">
             {fashionCategories.map((category) => (
               <a className="fashion-category" href="#" key={category.name}>
-                <span className="fashion-category__image"><img src={category.image} alt="" /></span>
+                <span className="fashion-category__image"><img src={category.image} alt={category.alt} /></span>
                 <span className="fashion-category__name">{category.name}</span>
               </a>
             ))}
