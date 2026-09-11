@@ -3,51 +3,15 @@
 import { useState } from "react";
 
 const fashionCategories = [
-  {
-    name: "Dresses",
-    image: "https://images.pexels.com/photos/36990984/pexels-photo-36990984.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Stylish Ghanaian women in vibrant local dresses",
-  },
-  {
-    name: "Tops",
-    image: "https://images.pexels.com/photos/37003830/pexels-photo-37003830.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Modern Ghanaian fashion top inspired by traditional fuugu styling",
-  },
-  {
-    name: "Trousers & Bottoms",
-    image: "https://images.pexels.com/photos/37003827/pexels-photo-37003827.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Contemporary Ghanaian fashion with local textile styling",
-  },
-  {
-    name: "Kente & Prints",
-    image: "https://images.pexels.com/photos/36603048/pexels-photo-36603048.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Vibrant Ghanaian kente fashion portrait",
-  },
-  {
-    name: "Traditional Wear",
-    image: "https://images.pexels.com/photos/36990986/pexels-photo-36990986.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Ghanaian traditional fuugu fashion in Accra",
-  },
-  {
-    name: "Accessories",
-    image: "https://images.pexels.com/photos/33697672/pexels-photo-33697672.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Ghanaian traditional jewelry and bead accessories",
-  },
-  {
-    name: "Bags",
-    image: "https://images.pexels.com/photos/36652113/pexels-photo-36652113.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Ghanaian fashion styling with a statement bag",
-  },
-  {
-    name: "Footwear",
-    image: "https://images.pexels.com/photos/33697674/pexels-photo-33697674.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Traditional Ghanaian styling with gold sandals",
-  },
-  {
-    name: "Others",
-    image: "https://images.pexels.com/photos/36405531/pexels-photo-36405531.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Elegant Ghanaian fashion portrait with local textiles",
-  },
+  { name: "Dresses", image: "/images/fashion/categories/dresses.jpg", alt: "Ghanaian dresses" },
+  { name: "Tops", image: "/images/fashion/categories/tops.jpg", alt: "Ghanaian tops" },
+  { name: "Trousers & Bottoms", image: "/images/fashion/categories/bottoms.jpg", alt: "Ghanaian trousers and bottoms" },
+  { name: "Kente & Prints", image: "/images/fashion/categories/kente-prints.jpg", alt: "Ghanaian kente and prints" },
+  { name: "Traditional Wear", image: "/images/fashion/categories/traditional-wear.jpg", alt: "Ghanaian traditional wear" },
+  { name: "Accessories", image: "/images/fashion/categories/accessories.jpg", alt: "Ghanaian accessories" },
+  { name: "Bags", image: "/images/fashion/categories/bags.jpg", alt: "Ghanaian bags" },
+  { name: "Footwear", image: "/images/fashion/categories/footwear.jpg", alt: "Ghanaian footwear" },
+  { name: "Others", image: "/images/fashion/categories/others.jpg", alt: "Other Ghanaian fashion" },
 ];
 
 export default function HomePage() {
