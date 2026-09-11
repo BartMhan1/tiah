@@ -34,14 +34,14 @@ export default function CategoryHero({
   const goNext = () => setActiveIndex((current) => (current + 1) % images.length);
 
   return (
-    <section className="category-hero" aria-label={`${title} collection`}>
-      <div className="category-hero__slides">
+    <section className="category-hero category-hero--compact" aria-label={`${title} collection`}>
+      <div className="category-hero__slides category-hero__slides--compact">
         {images.map((image, index) => (
           <img
             key={image}
             src={image}
             alt=""
-            className={`category-hero__image${index === activeIndex ? " is-active" : ""}`}
+            className={`category-hero__image category-hero__image--compact${index === activeIndex ? " is-active" : ""}`}
             aria-hidden={index !== activeIndex}
           />
         ))}
@@ -72,6 +72,35 @@ export default function CategoryHero({
           </div>
         </>
       )}
+
+      <style jsx>{`
+        .category-hero--compact {
+          height: clamp(260px, 35vh, 360px);
+          min-height: 0;
+        }
+
+        .category-hero__slides--compact {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .category-hero__image--compact {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        @media (max-width: 760px) {
+          .category-hero--compact {
+            height: clamp(230px, 32vh, 300px);
+          }
+        }
+      `}</style>
     </section>
   );
 }
