@@ -1,5 +1,6 @@
 import CategoryHero from "../../../components/fashion/category/CategoryHero";
 import DressFilters from "../../../components/fashion/category/DressFilters";
+import DressProductGrid from "../../../components/fashion/category/DressProductGrid";
 import StoreHeader from "../../../components/store/StoreHeader";
 
 const dressHeroImages = [
@@ -34,10 +35,7 @@ export default function DressesPage() {
         </div>
 
         <DressFilters />
-
-        <div className="category-product-placeholder" aria-label="Products coming next">
-          <p>Dress products will appear here.</p>
-        </div>
+        <DressProductGrid />
       </section>
     </main>
   );
